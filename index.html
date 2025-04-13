@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeBud - Account Confirmed</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 500px;
+            padding: 40px;
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            margin-bottom: 24px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .logo-circle {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #FF6B6B, #FF8A8A);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3);
+        }
+
+        .logo-icon {
+            color: white;
+            font-size: 30px;
+        }
+
+        h1 {
+            margin: 0 0 8px 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        h1 span {
+            color: #FF6B6B;
+        }
+
+        h2 {
+            margin: 24px 0 12px 0;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        p {
+            margin: 12px 0;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        .success-icon {
+            color: #4CAF50;
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #FF6B6B, #FF8A8A);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 6px rgba(255, 107, 107, 0.2);
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(255, 107, 107, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="logo-circle">
+                <span class="logo-icon">🍴</span>
+            </div>
+        </div>
+        <h1>Recipe<span>Bud</span></h1>
+        <p>Your Smart Cooking Companion</p>
+        
+        <!-- Success message -->
+        <div class="success-icon">✓</div>
+        <h2>Account Confirmed!</h2>
+        <p>Your email has been successfully verified. You can now return to the app and sign in with your credentials.</p>
+        
+        <p>Please close this page and open the RecipeBud app to continue.</p>
+        
+        <!-- Button to open the app - this would require a custom URL scheme -->
+        <a href="recipebud://" class="button">Open RecipeBud App</a>
+    </div>
+</body>
+</html>
